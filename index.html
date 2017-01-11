@@ -1,0 +1,44 @@
+<!--  
+    Check my website: https://www.stabla.me/
+    Check my GitHub: @stabla
+    Me: Guillaume Bonnet
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Colors PickerCursor by Guillaume Bonnet </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        // For mobile iOS
+        function showCoords(event) {
+            X = event.clientX;
+            Y = event.clientY;
+        }
+        
+      
+    </script>
+</head>
+
+<body>
+
+    <input type="text" class="text-in" autofocus>
+
+    <div class="mouse-text colorIt"> Scroll/move on rectangle</div>
+
+    <div id="wrapper" onclick="showCoords(event)">
+        <div id="scroller"></div>
+    </div>
+
+    <div class="data colorIt">
+        rgb&#40;
+        <input type="text" class="color colorIt">&#41;
+        <br> #
+        <input type="text" class="color-hexa colorIt">
+    </div>
+    <div class="author"><a href="https://www.stabla.me" class="colorIt">Guillaume Bonnet</a> - <a href="https://github.com/stabla" class="colorIt">Github</a></div>
+    <script src="app.js"></script>
+</body>
+
+</html>
