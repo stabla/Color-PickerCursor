@@ -25,6 +25,10 @@ function rgbToHex(r, g, b) { // only for input
     return (componentToHex(r) + componentToHex(g) + componentToHex(b));
 }
 
+wrapperEl.addEventListener('click', function() {
+    window.prompt("Copy to clipboard: Ctrl+C, Enter",  'rgb(' + xValue + ',' + yValue + ',' + depthValue + ')' + ' OR ' + '#' + rgbToHex(xValue, yValue, depthValue));
+});
+
 const change = function () {
     wrapperEl.style.backgroundColor = 'rgb(' + xValue + ',' + yValue + ',' + depthValue + ')';
 
