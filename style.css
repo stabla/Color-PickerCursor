@@ -81,11 +81,10 @@ body {
     font-size: 3rem;
     color: #fff;
     width: 50%;
-    margin: 0 auto;
     position: relative;
     top: 200px;
     left: 50%;
-    margin-left: -75px;
+    margin-left: -25%;
     background-color: transparent;
     text-align: center;
     font-weight: 200;
