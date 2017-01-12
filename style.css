@@ -80,7 +80,8 @@ body {
     outline: none;
     font-size: 3rem;
     color: #fff;
-    width: 150px;
+    width: 50%;
+    margin: 0 auto;
     position: relative;
     top: 200px;
     left: 50%;
