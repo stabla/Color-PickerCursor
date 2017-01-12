@@ -60,7 +60,7 @@ body {
 }
 
 .color,.color-hexa {
-    width: 230px;
+    width: 320px;
     font-size: 34px;
     font-size: 6vh;
     border: none;
@@ -80,11 +80,11 @@ body {
     outline: none;
     font-size: 3rem;
     color: #fff;
-    width: 150px;
+    width: 50%;
     position: relative;
     top: 200px;
     left: 50%;
-    margin-left: -75px;
+    margin-left: -25%;
     background-color: transparent;
     text-align: center;
     font-weight: 200;
