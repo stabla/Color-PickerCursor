@@ -25,9 +25,21 @@ function rgbToHex(r, g, b) { // only for input
     return (componentToHex(r) + componentToHex(g) + componentToHex(b));
 }
 
-wrapperEl.addEventListener('click', function() {
+(function detectmob() { 
+ if( !navigator.userAgent.match(/Android/i)
+ || !navigator.userAgent.match(/webOS/i)
+ || !navigator.userAgent.match(/iPhone/i)
+ || !navigator.userAgent.match(/iPad/i)
+ || !navigator.userAgent.match(/iPod/i)
+ || !navigator.userAgent.match(/BlackBerry/i)
+ || !navigator.userAgent.match(/Windows Phone/i)
+ ){
+    wrapperEl.addEventListener('click', function() {
     window.prompt("Copy to clipboard: Ctrl+C, Enter",  'rgb(' + xValue + ',' + yValue + ',' + depthValue + ')' + ' OR ' + '#' + rgbToHex(xValue, yValue, depthValue));
-});
+    });
+  }
+})();
+
 
 const change = function () {
     wrapperEl.style.backgroundColor = 'rgb(' + xValue + ',' + yValue + ',' + depthValue + ')';
